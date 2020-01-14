@@ -3,16 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2035649F23CE3E6500826EBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2035649E23CE3E6500826EBF /* AppDelegate.swift */; };
 		203564A123CE3E6500826EBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203564A023CE3E6500826EBF /* SceneDelegate.swift */; };
-		203564A323CE3E6500826EBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203564A223CE3E6500826EBF /* ViewController.swift */; };
+		203564A323CE3E6500826EBF /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203564A223CE3E6500826EBF /* CategoriesViewController.swift */; };
 		203564A623CE3E6500826EBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 203564A423CE3E6500826EBF /* Main.storyboard */; };
 		203564A823CE3E6E00826EBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 203564A723CE3E6E00826EBF /* Assets.xcassets */; };
 		203564AB23CE3E6E00826EBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 203564A923CE3E6E00826EBF /* LaunchScreen.storyboard */; };
+		203564B323CE49EB00826EBF /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203564B223CE49EB00826EBF /* EventsViewController.swift */; };
+		203564B523CE49F800826EBF /* EOCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203564B423CE49F800826EBF /* EOCategory.swift */; };
+		203564B723CE4A0000826EBF /* EOError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203564B623CE4A0000826EBF /* EOError.swift */; };
+		203564B923CE4A0900826EBF /* EOEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203564B823CE4A0900826EBF /* EOEvent.swift */; };
+		203564BB23CE4A1100826EBF /* EONET.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203564BA23CE4A1100826EBF /* EONET.swift */; };
+		203564BD23CE4A1900826EBF /* EOLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203564BC23CE4A1900826EBF /* EOLocation.swift */; };
+		203564C023CE4AC800826EBF /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203564BF23CE4AC800826EBF /* EventCell.swift */; };
+		203564C223CE4ADB00826EBF /* DownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203564C123CE4ADB00826EBF /* DownloadView.swift */; };
 		D7980A7EE0FE99A94BE3A640 /* Pods_RxSwift_EONET.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309A431223E7C262EE0E0A01 /* Pods_RxSwift_EONET.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,11 +28,19 @@
 		2035649B23CE3E6500826EBF /* RxSwift-EONET.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift-EONET.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2035649E23CE3E6500826EBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		203564A023CE3E6500826EBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		203564A223CE3E6500826EBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		203564A223CE3E6500826EBF /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		203564A523CE3E6500826EBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		203564A723CE3E6E00826EBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		203564AA23CE3E6E00826EBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		203564AC23CE3E6E00826EBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		203564B223CE49EB00826EBF /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		203564B423CE49F800826EBF /* EOCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOCategory.swift; sourceTree = "<group>"; };
+		203564B623CE4A0000826EBF /* EOError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOError.swift; sourceTree = "<group>"; };
+		203564B823CE4A0900826EBF /* EOEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOEvent.swift; sourceTree = "<group>"; };
+		203564BA23CE4A1100826EBF /* EONET.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EONET.swift; sourceTree = "<group>"; };
+		203564BC23CE4A1900826EBF /* EOLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOLocation.swift; sourceTree = "<group>"; };
+		203564BF23CE4AC800826EBF /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		203564C123CE4ADB00826EBF /* DownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadView.swift; sourceTree = "<group>"; };
 		2AEC4360BE621685FCB706F5 /* Pods-RxSwift-EONET.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-EONET.debug.xcconfig"; path = "Target Support Files/Pods-RxSwift-EONET/Pods-RxSwift-EONET.debug.xcconfig"; sourceTree = "<group>"; };
 		309A431223E7C262EE0E0A01 /* Pods_RxSwift_EONET.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwift_EONET.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C852ADAF7EDE2B67E2AA1DEE /* Pods-RxSwift-EONET.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-EONET.release.xcconfig"; path = "Target Support Files/Pods-RxSwift-EONET/Pods-RxSwift-EONET.release.xcconfig"; sourceTree = "<group>"; };
@@ -73,13 +89,29 @@
 			children = (
 				2035649E23CE3E6500826EBF /* AppDelegate.swift */,
 				203564A023CE3E6500826EBF /* SceneDelegate.swift */,
-				203564A223CE3E6500826EBF /* ViewController.swift */,
 				203564A423CE3E6500826EBF /* Main.storyboard */,
 				203564A723CE3E6E00826EBF /* Assets.xcassets */,
 				203564A923CE3E6E00826EBF /* LaunchScreen.storyboard */,
 				203564AC23CE3E6E00826EBF /* Info.plist */,
+				203564A223CE3E6500826EBF /* CategoriesViewController.swift */,
+				203564B223CE49EB00826EBF /* EventsViewController.swift */,
+				203564BE23CE4A9F00826EBF /* Model */,
+				203564BF23CE4AC800826EBF /* EventCell.swift */,
+				203564C123CE4ADB00826EBF /* DownloadView.swift */,
 			);
 			path = "RxSwift-EONET";
+			sourceTree = "<group>";
+		};
+		203564BE23CE4A9F00826EBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				203564B423CE49F800826EBF /* EOCategory.swift */,
+				203564B623CE4A0000826EBF /* EOError.swift */,
+				203564B823CE4A0900826EBF /* EOEvent.swift */,
+				203564BA23CE4A1100826EBF /* EONET.swift */,
+				203564BC23CE4A1900826EBF /* EOLocation.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		ECE748FF5CCD90CAB1A51B25 /* Pods */ = {
@@ -88,7 +120,6 @@
 				2AEC4360BE621685FCB706F5 /* Pods-RxSwift-EONET.debug.xcconfig */,
 				C852ADAF7EDE2B67E2AA1DEE /* Pods-RxSwift-EONET.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,9 +238,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				203564A323CE3E6500826EBF /* ViewController.swift in Sources */,
+				203564A323CE3E6500826EBF /* CategoriesViewController.swift in Sources */,
+				203564BB23CE4A1100826EBF /* EONET.swift in Sources */,
+				203564C023CE4AC800826EBF /* EventCell.swift in Sources */,
+				203564B323CE49EB00826EBF /* EventsViewController.swift in Sources */,
 				2035649F23CE3E6500826EBF /* AppDelegate.swift in Sources */,
 				203564A123CE3E6500826EBF /* SceneDelegate.swift in Sources */,
+				203564C223CE4ADB00826EBF /* DownloadView.swift in Sources */,
+				203564B723CE4A0000826EBF /* EOError.swift in Sources */,
+				203564B923CE4A0900826EBF /* EOEvent.swift in Sources */,
+				203564BD23CE4A1900826EBF /* EOLocation.swift in Sources */,
+				203564B523CE49F800826EBF /* EOCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  EventsViewController.swift
 //  RxSwift-EONET
 //
 //  Created by Jaycee on 2020/01/15.
@@ -8,13 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class EventsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
+    
 
+  
 
 }
-
