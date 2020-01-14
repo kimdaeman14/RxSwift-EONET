@@ -106,8 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				203564B423CE49F800826EBF /* EOCategory.swift */,
-				203564B623CE4A0000826EBF /* EOError.swift */,
 				203564B823CE4A0900826EBF /* EOEvent.swift */,
+				203564B623CE4A0000826EBF /* EOError.swift */,
 				203564BA23CE4A1100826EBF /* EONET.swift */,
 				203564BC23CE4A1900826EBF /* EOLocation.swift */,
 			);
